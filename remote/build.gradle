@@ -35,7 +35,6 @@ android {
 
 dependencies {
 
-    implementation project(':data')
 
     // Add dependencies
     api  "com.squareup.retrofit2:retrofit:$retrofitVersion"

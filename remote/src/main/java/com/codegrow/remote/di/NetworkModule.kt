@@ -1,7 +1,7 @@
 package com.codegrow.remote.di
 
 
-import com.codegrow.data.BuildConfig
+import com.codegrow.remote.BuildConfig
 import com.codegrow.remote.api.ApiService
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -57,9 +57,9 @@ object NetworkModule {
      */
     @Provides
     fun provideRetrofitTest(okHttpClient: OkHttpClient) : Retrofit {
-//        val contentType = "application/json".toMediaType()
+        // todo add base url
         return Retrofit.Builder()
-            .baseUrl("http://nd7d1.mocklab.io/")
+            .baseUrl("")
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()

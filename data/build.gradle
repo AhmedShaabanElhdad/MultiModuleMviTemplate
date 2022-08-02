@@ -37,7 +37,9 @@ android {
 
 dependencies {
 
-    api project(':domain')
+    implementation project(':domain')
+    implementation project(':remote')
+    implementation project(':local')
 
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"

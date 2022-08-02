@@ -35,9 +35,6 @@ android {
 
 dependencies {
 
-
-    implementation project(':data')
-
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 
